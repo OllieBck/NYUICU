@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>NYUICU</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+	<img class="header" src="./images/ICONPHOTO.png">
+	<button class="button1" type="button" onclick="emergency();"><img class="fullWidth" src="./images/EmergencyCall.png"></button>
+	<button class="button1" type="button" onclick="communication();"><img class="fullWidth" src="./images/Communication.png"></button>
+	<button class="button1" type="button" onclick="pain();"><img class="fullWidth" src="./images/FeelPain.png"></button>
+	<button class="button1" type="button" onclick="fan_toggle();"><img class="fullWidth" src="./images/RoomControl.png"></button>
+	<button class="button1" type="button" onclick="emotions();"><img class="fullWidth" src="./images/Emotions.png"></button>
+	<button class="button2" type="button" onclick="yes();"><img class="fourth"  src="./images/YES.png"></button>
+	<button class="button2" type="button" onclick="no();"><img class="fourth" src="./images/NO.png"></button>
+	<button class="button2" type="button" onclick="thankyou();"><img class="third" src="./images/ThankYou.png"></button>
+	<!-- Source Paho MQTT Client-->
+	<script src="lib/mqttws31.js"></script>
+	<!-- Our Code Goes Here -->
+	<script src="phone_test.js"></script>
+	<!-- Start it up! -->
+	<script>connect();</script>
+
+   </body>
+</html>
